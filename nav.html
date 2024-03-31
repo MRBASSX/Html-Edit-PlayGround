@@ -1,0 +1,899 @@
+<header
+        id="header"
+        style={{ position: "sticky", top: "0px", zIndex: "1" }}
+      >
+        <div className="bg-primary">
+          <div className="container  ">
+            <div className="col-sm-4">
+              <div className="contactinfo text-white">
+                <ul className="nav nav-pills">
+                  <li>
+                    <a href="#" className="text-white">
+                      <i className="fa fa-phone" style={{ fontSize: "11px" }}>
+                        {" "}
+                        0550965601
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="text-white">
+                      <i className="fa fa-envelope" style={{ fontize: "11px" }}>
+                        {" "}
+                        Abassiddrisu9222@gmail.com
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-sm-4 mt-3">
+              <div className="navbar-header">
+                <button
+                  type="button"
+                  className="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <span className="sr-only">Toggle navigation</span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                </button>
+              </div>
+              <div className="mainmenu ">
+                <ul className="nav navbar-nav collapse navbar-collapse">
+                  <li>
+                    <a
+                      href="/"
+                      className="active text-white "
+                      style={{ fontFamily: "system-ui" }}
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li className="dropdown text-white nav-item">
+                    <a
+                      href="/"
+                      className="text-white "
+                      style={{ fontFamily: "system-ui" }}
+                    >
+                      Shop<i className="fa fa-angle-down "></i>
+                    </a>
+                    <ul role="menu " className="sub-menu bg-primary ">
+                      <li>
+                        <a href="/" style={{ fontFamily: "system-ui" }}>
+                          Products
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" style={{ fontFamily: "system-ui" }}>
+                          Checkout
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" style={{ fontFamily: "system-ui" }}>
+                          Cart
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" style={{ fontFamily: "system-ui" }}>
+                          Whishlist
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/"
+                      className="text-white fa"
+                      style={{ fontFamily: "system-ui" }}
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="social-icons pull-right p-2">
+              <ul className="nav nav-pills ">
+                <li className="nav-item">
+                  <a href="#" className="nav-link active" aria-current="page">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-dribbble"></i>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <header id="header" className="mt-1 ">
+        <div className="bg-primary">
+          <div className="container  ">
+            <div
+              className="row-sm-8 "
+              style={{ display: "flex", flexWrap: "wrap" }}
+            >
+              <div className="col-sm-2" style={{ marginRight: "100px" }}>
+                <div className="logo pull-left">
+                  <a href="{'% url 'home' %'}">
+                    <h4 style={{ color: "white" }}>
+                      <span style={{ color: "orange", fontSize: "50px" }}>
+                        THE-
+                      </span>
+                      BRAINTECH
+                    </h4>
+                  </a>
+                </div>
+              </div>
+
+              <form
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  padding: "20px",
+                }}
+              >
+                <select
+                  style={{
+                    border: "2px solid white",
+                    width: "20%",
+                    height: "50px",
+                  }}
+                  className="bg-primary text-white"
+                >
+                  <option>Phone</option>
+                  <option>Television</option>
+                  <option>Laptop</option>
+                </select>
+
+                <input
+                  className="form-control mr-sm-2 bg-primary text-white border-white bg-primary text-white"
+                  type="search"
+                  placeholder="Search for something"
+                  aria-label="Search"
+                  value=""
+                  style={{
+                    width: "260px",
+                    border: "2px solid white",
+                    height: "50px",
+                  }}
+                />
+                <button
+                  className="btn btn-outline-light border-white "
+                  style={{ height: "50px", border: "2px solid white" }}
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+
+            <div className="social-icons pull-right p-2 ">
+              <ul className="nav nav-pills  ">
+                {"% if request.user.is_authenticated %"}
+                <div className="mainmenu ">
+                  <ul className="nav navbar-nav collapse navbar-collapse">
+                    <li className="dropdown text-white nav-item fs-5">
+                      <a href="#" className="nav-link active">
+                        <i
+                          className="fa fa-user myhover"
+                          style={{ fontSize: "10px" }}
+                        >
+                          {" "}
+                          Account
+                        </i>
+                      </a>
+                      <ul role="menu " className="sub-menu bg-primary ">
+                        <li>
+                          <a href="/">Settings</a>
+                        </li>
+                        <li>
+                          <a href="/">Profile</a>
+                        </li>
+                        <li>
+                          <a href="/">Orders</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* {"% endif %"} */}
+                <li className="nav-item fs-5 ">
+                  <a href="#" className="nav-link active" aria-current="page">
+                    <i
+                      className="fa-solid fa-heart  myhover "
+                      style={{ fontSize: "10px" }}
+                    >
+                      {" "}
+                      Wishlist
+                    </i>
+                  </a>
+                </li>
+
+                <li className="nav-item fs-5">
+                  <a href="#" className="nav-link active">
+                    <i
+                      className="fa fa-crosshairs myhover "
+                      style={{ fontSize: "10px" }}
+                    >
+                      {" "}
+                      Checkout
+                    </i>
+                  </a>
+                </li>
+
+                <li className="nav-item fs-5">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-shopping-cart myhover">
+                      <span
+                        className="badge bg-primary text-white border border-white rounded-circle"
+                        style={{ paddingBottom: "2px" }}
+                      >
+                        0
+                      </span>
+                    </i>{" "}
+                  </a>
+                </li>
+
+                <li className="nav-item fs-5">
+                  <a href="#" className="nav-link active">
+                    <i className="fa-solid fa-heart  myhover">
+                      <span
+                        className="badge bg-primary text-white border border-white rounded-circle "
+                        style={{ paddingBottom: "2px" }}
+                      >
+                        0
+                      </span>
+                    </i>
+                  </a>
+                </li>
+
+                {/* {"% if request.user.is_authenticated %"} */}
+                <div className="mainmenu ">
+                  <ul className="nav navbar-nav collapse navbar-collapse">
+                    <li className="dropdown text-white nav-item fs-5 ">
+                      <a href="#" className="nav-link active">
+                        <i className="fa fa-user myhover">
+                          {" "}
+                          {"{request.user}"}
+                        </i>
+                      </a>
+                      <ul role="menu " className="sub-menu bg-primary ">
+                        <li>
+                          <a href="/">Profile</a>
+                        </li>
+                        <li>
+                          <a href="/">Change Password</a>
+                        </li>
+                        <li>
+                          <a href="/">{"{Logout}"}</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                {/* {"% else %"} */}
+                <li>
+                  <a href="{% url 'home' %}" className="bg-light">
+                    <i className="fa fa-lock myhover fs-5 ">Login</i>
+                  </a>
+                </li>
+                {/* {"% endif %"} */}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+
+
+
+
+
+
+
+
+
+{/* <header id="header">
+        <div classNameName="bg-primary">
+          <div classNameName="container  ">
+            <div classNameName="col-sm-8">
+              <div classNameName="contactinfo text-white">
+                <ul classNameName="nav nav-pills">
+                  <li >
+                    <Link to="#" classNameName="text-whit" style={{color:'red', backgroundColor:'white'}}>
+                      <i classNameName="fa fa-phone" ></i> 0550965601
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#" classNameName="text-white">
+                      <i classNameName="fa fa-envelope"></i> Abassiddrisu9222@gmail.com
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div classNameName="social-icons pull-right p-2">
+              <ul classNameName="nav nav-pills ">
+                <li classNameName="nav-item">
+                  <Link to="#" classNameName="nav-link active" aria-current="page">
+                    <i classNameName="fa fa-twitter"></i>
+                  </Link>
+                </li>
+                <li classNameName="nav-item">
+                  <Link to="#" classNameName="nav-link active">
+                    <i classNameName="fa faFacebook"></i>
+                  </Link>
+                </li>
+                <li classNameName="nav-item">
+                  <Link to="#" classNameName="nav-link active">
+                    <i classNameName="fa fa-dribbble"></i>
+                  </Link>
+                </li>
+                <li classNameName="nav-item">
+                  <Link to="#" classNameName="nav-link active">
+                    <i classNameName="fa fa-linkedin"></i>
+                  </Link>
+                </li>
+                <li classNameName="nav-item">
+                  <Link to="#" classNameName="nav-link active">
+                    <i classNameName="fa fa-google-plus"></i>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <header id="header" classNameName="mt-1 " >
+        <div classNameName="bg-primary">
+          <div classNameName="container  ">
+            <div classNameName="row-sm-8 " >
+              <div classNameName="col-sm-2" >
+                <div classNameName="logo pull-left">
+                  <Link to="{% url 'home' %}">
+                    <h4 >
+                      <span >THE-</span>
+                      BRAINTECH
+                    </h4>
+                  </Link>
+                </div>
+              </div>
+
+              <form >
+                <select
+                 
+                 classNameName="bg-primary text-white"
+                >
+                  <option>Phone</option>
+                  <option>Television</option>
+                  <option>Laptop</option>
+                </select>
+
+                <input
+                 classNameName="form-control mr-sm-2 bg-primary text-white border-white bg-primary text-white"
+                  type="search"
+                  placeholder="Search for something"
+                  aria-label="Search"
+                  
+                 
+                />
+                <button
+                 classNameName="btn btn-outline-light border-white "
+                  
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+
+            <div classNameName="social-icons pull-right p-2 ">
+              <ul classNameName="nav nav-pills  ">
+                <div classNameName="mainmenu ">
+                  <ul classNameName="nav navbar-nav collapse navbar-collapse">
+                    <li classNameName="dropdown text-white nav-item fs-5">
+                      <Link to="#" classNameName="nav-link active">
+                        <i classNameName="fa fa-user myhover"> Account</i>
+                      </Link>
+                      <ul role="menu " classNameName="sub-menu bg-primary ">
+                        <li>
+                          <Link to="/">Settings</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Profile</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Orders</Link>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <li classNameName="nav-item fs-5 ">
+                  <Link to="#" classNameName="nav-link active" aria-current="page">
+                    <i classNameName="fa fa-star  myhover">Wishlist</i>
+                  </Link>
+                </li>
+
+                <li classNameName="nav-item fs-5">
+                  <Link to="#" classNameName="nav-link active">
+                    <i classNameName="fa fa-crosshairs myhover ">Checkout</i>
+                  </Link>
+                </li>
+
+                <li classNameName="nav-item fs-5">
+                  <Link to="#" classNameName="nav-link active">
+                    <i classNameName="fa fa-shopping-cart myhover">
+                      <span
+                       classNameName="badge bg-primary text-white border border-white rounded-circle"
+                        
+                      >
+                        0
+                      </span>
+                    </i>
+                  </Link>
+                </li>
+
+                <li classNameName="nav-item fs-5">
+                  <Link to="#" classNameName="nav-link active">
+                    <i classNameName="fa fa-star  myhover">
+                      <span
+                       classNameName="badge bg-primary text-white border border-white rounded-circle "
+                        
+                      >
+                        0
+                      </span>
+                    </i>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="" classNameName="bg-light">
+                    <i classNameName="fa fa-lock myhover fs-5 "> Login</i>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div classNameName="bg-light ">-</div>
+
+      <header id="header" classNameName="mt-2">
+        <div classNameName="header-bottom bg-primary mt-1 " >
+          <div classNameName="container ">
+            <div classNameName="row">
+              <div classNameName="col-sm-9">
+                <div classNameName="navbar-header">
+                  <button
+                    type="button"
+                   classNameName="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                  >
+                    <span classNameName="sr-only">Toggle navigation</span>
+                    <span classNameName="icon-bar"></span>
+                    <span classNameName="icon-bar"></span>
+                    <span classNameName="icon-bar"></span>
+                  </button>
+                </div>
+                <div classNameName="mainmenu">
+                  <ul classNameName="nav navbar-nav collapse navbar-collapse">
+                    <li>
+                      <Link to="/" classNameName="active text-white">
+                        Home
+                      </Link>
+                    </li>
+                    <li classNameName="dropdown text-white">
+                      <Link to="/" classNameName="text-white">
+                        Shop<i classNameName="fa fa-angle-down "></i>
+                      </Link>
+                      <ul role="menu " classNameName="sub-menu bg-primary ">
+                        <li>
+                          <Link to="/">Products</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Checkout</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Cart</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Login</Link>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <Link to="/" classNameName="text-white">
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header> */}
+
+
+<header
+        id="header"
+        style={{ position: "sticky", top: "0px",
+         zIndex:5 ,display:"flex" ,
+          justifyContent:"space-between",
+        flexWrap:"wrap" }}
+        className="bg-primary"
+      >
+        <div className="container-fluid bg-primary">
+          <div className="">
+
+            <div className="col-sm-4 bg-primary">
+              <div className="contactinfo text-white">
+                <ul className="nav nav-pills">
+                  <li>
+                    <a href="#" className="text-white">
+                      <i className="fa fa-phone" style={{ fontSize: "11px" }}>
+                        {" "}
+                        0550965601
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="text-white">
+                      <i className="fa fa-envelope" style={{ fontize: "11px" }}>
+                        {" "}
+                        Abassiddrisu9222@gmail.com
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+           <div className="col-sm-4">
+              <form
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  padding: "10px",
+                 
+                 }}
+                
+                 
+              >
+                <select
+                  style={{
+                    border: "2px solid white",
+                    width: "20%",
+                    height: "50px",
+                  }}
+                  className="bg-primary text-white"
+                >
+                  <option>Phone</option>
+                  <option>Television</option>
+                  <option>Laptop</option>
+                </select>
+                
+                <input
+                  className="form-control mr-sm-2 border-white bg-primary "
+                  type="text"
+                  placeholder="Something? Search"
+                  aria-label="Search"
+                  style={{
+                    width: "260px",
+                    border: "2px solid white",
+                    height: "50px",
+                    fontSize:"20px",
+                    color:"white"
+                  }}
+                />
+                
+                <button
+                  className="btn btn-outline-light border-white "
+                  style={{ height: "50px", border: "2px solid white" }}
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+              </div>
+
+
+
+            <div className="col-sm-3 mt-4 ">
+              <div className="navbar-header">
+                <button
+                  type="button"
+                  className="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <span className="sr-only">Toggle navigation</span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                </button>
+              </div>
+              <div className="mainmenu ">
+                <ul className="nav navbar-nav collapse navbar-collapse">
+                  <li>
+                    <a
+                      href="/"
+                      className="active text-white "
+                      style={{ fontFamily: "system-ui" }}
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li className="dropdown text-white nav-item">
+                    <a
+                      href="/"
+                      className="text-white "
+                      style={{ fontFamily: "system-ui" }}
+                    >
+                      Shop<i className="fa fa-angle-down "></i>
+                    </a>
+                    <ul role="menu " className="sub-menu bg-primary ">
+                      <li>
+                        <a href="/" style={{ fontFamily: "system-ui" }}>
+                          Products
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" style={{ fontFamily: "system-ui" }}>
+                          Checkout
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" style={{ fontFamily: "system-ui" }}>
+                          Cart
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" style={{ fontFamily: "system-ui" }}>
+                          Whishlist
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/"
+                      className="text-white fa"
+                      style={{ fontFamily: "system-ui" }}
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </header>
+
+
+
+
+      <header  className="display-flex justify-content-space-arround flex-wrap">
+      
+      <div className="social-icons pull-right p-2">
+              <ul className="nav nav-pills ">
+                <li className="nav-item">
+                  <a href="#" className="nav-link active" aria-current="page">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-dribbble"></i>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+              <div className="social-icons pull-right p-2 m-4 ">
+              <ul className="nav nav-pills  ">
+                {/* {"% if request.user.is_authenticated %"} */}
+                <div className="mainmenu ">
+                  <ul className="nav navbar-nav collapse navbar-collapse">
+                    <li className="dropdown text-white nav-item fs-5">
+                      <a href="#" className="nav-link active">
+                        <i
+                          className="fa fa-user myhover"
+                          style={{ fontSize: "10px" }}
+                        >
+                          {" "}
+                          Account
+                        </i>
+                      </a>
+                      <ul role="menu " className="sub-menu bg-primary ">
+                        <li>
+                          <a href="/">Settings</a>
+                        </li>
+                        <li>
+                          <a href="/">Profile</a>
+                        </li>
+                        <li>
+                          <a href="/">Orders</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* {"% endif %"} */}
+                <li className="nav-item fs-5 ">
+                  <a href="#" className="nav-link active" aria-current="page">
+                    <i
+                      className="fa-solid fas-heart myhover "
+                      style={{ fontSize: "10px" }}
+                    >
+                      {" "}
+                      Wishlist
+                    </i>
+                  </a>
+                </li>
+
+                <li className="nav-item fs-5">
+                  <a href="#" className="nav-link active">
+                    <i
+                      className="fa fa-crosshairs myhover "
+                      style={{ fontSize: "10px" }}
+                    >
+                      {" "}
+                      Checkout
+                    </i>
+                  </a>
+                </li>
+
+                <li className="nav-item fs-5">
+                  <a href="#" className="nav-link active">
+                    <i className="fa fa-shopping-cart myhover">
+                      <span
+                        className="badge bg-primary text-white border border-white rounded-circle"
+                        style={{ paddingBottom: "2px" }}
+                      >
+                        0
+                      </span>
+                    </i>{" "}
+                  </a>
+                </li>
+
+                <li className="nav-item fs-5">
+                  <a href="#" className="nav-link active">
+                    <i className="fa-solid fa-heart  myhover">
+                      <span
+                        className="badge bg-primary text-white border border-white rounded-circle "
+                        style={{ paddingBottom: "2px" }}
+                      >
+                        0
+                      </span>
+                    </i>
+                  </a>
+                </li>
+
+                {/* {"% if request.user.is_authenticated %"} */}
+                <div className="mainmenu ">
+                  <ul className="nav navbar-nav collapse navbar-collapse">
+                    <li className="dropdown text-white nav-item fs-5 ">
+                      <a href="#" className="nav-link active">
+                        <i className="fa fa-user myhover">
+                          {" "}
+                          {/* {"{request.user}"} */}
+                        </i>
+                      </a>
+                      <ul role="menu " className="sub-menu bg-primary ">
+                        <li>
+                          <a href="/">Profile</a>
+                        </li>
+                        <li>
+                          <a href="/">Change Password</a>
+                        </li>
+                        <li>
+                          <a href="/">{"{Logout}"}</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                {/* {"% else %"} */}
+                <li>
+                  <a href="{% url 'home' %}" className="bg-light">
+                    <i className="fa fa-lock myhover fs-5 ">Login</i>
+                  </a>
+                </li>
+                {/* {"% endif %"} */}
+              </ul>
+            </div>
+          
+      </header>
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      <header id="header" className="mt-1 ">
+        <div className="bg-primary">
+          <div className="container-fluid">
+            <div
+              className="row-sm-8 "
+              style={{ display: "flex", flexWrap: "wrap" }}
+            >
+              <div className="col-sm-2" style={{ marginRight: "100px" }}>
+                <div className="">
+                  <a href="{'% url 'home' %'}">
+                    <h4 style={{ color: "white", padding:0 }} >
+                      <span style={{ color: "orange", fontSize: "35px" }}>
+                       THE-
+                      </span>
+                      BRAINTECH
+                    </h4>
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+
+           {/* <nav></nav> */}
+          </div>
+        </div>
+      </header>

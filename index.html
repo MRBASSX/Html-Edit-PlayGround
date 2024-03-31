@@ -1,0 +1,479 @@
+
+{% extends '../layout.html'%}
+
+
+
+
+
+{% block Title %}
+
+{{ "Home | THE-BRAINTECH" }}
+
+ {% endblock %}
+
+{% block content %}
+
+
+
+
+ <div id="carouselExampleAutoplaying" className="carousel slide " data-bs-ride="carousel">
+  	<div className="carousel-indicators bg-primary " >
+	    <button type="button" data-bs-target="#carouselExampleAutoplaying" style={{ marginRight:"200px", }} data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 0"></button>
+	    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 1"></button>
+	    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 2"></button>
+  </div>
+  <div className="carousel-inner">
+    <div className="carousel-item position-relative active" style={{ height:"430px", }}>
+
+                            <img className="col-sm-6 pull-left" src="/static/product/images/cover1.jpg" style={{ objectFit:"cover", }}>
+                            <img className="col-sm-6 pull-right" src="/static/product/images/cover2.jpg" style={{ objectFit:"cover", }}>
+
+                            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+
+                                <div className="p-3" style={{ maxWidth:"700px", }}>
+                                    <h1 className="display-4 text-primary mb-3 animate__animated animate__fadeInDown text-light ">Exciting New Feature</h1>
+                                    <p className="mx-md-5 px-5 animate__animated animate__bounceIn text-light fs-4">Find cheaper and affordable quality product,purchase and let serve you the best</p>
+                                    <a className="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-primary fs-4" href="/">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+    <div className="carousel-item position-relative active" style={{ height:"430px", }}>
+                            <img className="col-sm-6 pull-right" src="/static/product/images/cover2.jpg" style={{ objectFit:"cover", }}>
+                            <img className="col-sm-6 pull-left" src="/static/product/images/cover1.jpg" style={{ objectFit:"cover", }}>
+                            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div className="p-3" style={{ maxWidth:"700px", }}>
+                                   <h1 className="display-4 text-primary mb-3 animate__animated animate__fadeInDown text-primary ">New Generation</h1>
+                                    <p className="mx-md-5 px-5 animate__animated animate__bounceIn text-light fs-4">Find cheaper and affordable quality product,purchase and let serve you the best</p>
+                                    <a className="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-primary fs-4" href="/">Shop Now</a>
+                                </div>
+                            </div>
+   </div>
+
+    <div className="carousel-item position-relative" style={{ height:"430px", }}>
+				    <img  className="col-sm-6 pull-left" src="/static/product/images/cover1.jpg" className="d-block w-100" alt="...">
+				      <img className="col-sm-6 pull-left" src="/static/product/images/cover2.jpg" style={{ objectFit:"cover", }}>
+				       <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+					       <div className="p-3" style={{ maxWidth:"700px", }}>
+						        <h1 className="display-4 text-primary mb-3 animate__animated animate__fadeInDown text-light ">Branded Phone</h1>
+                                    <p className="mx-md-5 px-5 animate__animated animate__bounceIn text-light fs-4">Find cheaper and affordable quality product,purchase and let serve you the best</p>
+                                    <a className="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-primary fs-4" href="/">Shop Now</a>
+					          </div>
+				       </div>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+    <span className="visually-hidden ">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span className="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+ <!-- Featured Start -->
+    <div className="container-fluid pt-5 border-primary" >
+        <div className="row px-xl-5 pb-3">
+            <div className="col-lg-3 col-md-6 col-sm-12 pb-1 " >
+                <div className="d-flex align-items-center  mb-4 bg-light border-primary text-primary" style={{ padding:"30px", border:"1px solid", }}>
+                    <h1 className="fa-solid fa-medal text-primary m-0 mr-3"></h1>
+                    <h5 className="font-weight-semi-bold m-0">Quality Product</h5>
+                </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div className="d-flex align-items-center bg-light mb-4 bg-light border-primary text-primary" style={{ padding:"30px", border:"1px solid", }}>
+                    <h1 className="fas fa-truck text-primary m-0 mr-2"></h1>
+                    <h5 className="font-weight-semi-bold m-0">Free Shipping</h5>
+                </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div className="d-flex align-items-center bg-light mb-4 bg-light border-primary text-primary" style={{ padding:"30px", border:"1px solid", }}>
+                    <h1 className="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                    <h5 className="font-weight-semi-bold m-0">14-Day Return</h5>
+                </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div className="d-flex align-items-center bg-light mb-4 bg-light border-primary text-primary" style={{ padding:"30px", border:"1px solid", }}>
+                    <h1 className="fa fa-phone text-primary m-0 mr-3"></h1>
+                    <h5 className="font-weight-semi-bold m-0">24/7 Support</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured End -->
+
+
+
+
+
+
+	 <section id="slider ">
+		<div className="container mt-5">
+			<div className="row">
+				<div className="col-sm-12">
+					<div id="slider-carousel" className="carousel slide" data-ride="carousel">
+
+
+					<div className="carousel-item position-relative  active" >
+				    <img  className="col-sm-6 pull-left" src="/static/product/images/cover1.jpg"  width="100%" >
+				      <img className="col-sm-6 pull-left" src="/static/product/images/cover2.jpg"  width="100%">
+				       <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+					       <div className="p-3" >
+						        <h1 className="display-4 text-primary mb-3 animate__animated animate__fadeInDown text-light ">New Generation</h1>
+                                    <p className="mx-md-5 px-5 animate__animated animate__bounceIn text-light fs-4">Find cheaper and affordable quality product,purchase and let serve you the best</p>
+                                    <a className="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-primary fs-4" href="/">Shop Now</a>
+					          </div>
+				       </div>
+    </div>
+							</div>
+
+						</div>
+
+
+
+				</div>
+			</div>
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section>
+		<div className="container mt-5">
+			<div className="row">
+				<div className="col-sm-3">
+					<div className="left-sidebar  ">
+						<h2 className="text-primary">Category</h2>
+						<div className="panel-group category-products border-primary" id="accordian"><!--category-productsr-->
+							<div className="panel panel-default ">
+								<div className="panel-heading ">
+									<h4 className="panel-title  ">
+										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear" className="text-primary">
+											<span className="badge pull-right"><i className="fa fa-plus"></i></span>
+											Laptops
+										</a>
+									</h4>
+								</div>
+								<div id="sportswear" className="panel-collapse collapse border-primary">
+									<div className="panel-body ">
+										<ul>
+											<li><a href="#" className="text-primary">Sumsung</a></li>
+											<li><a href="#"className="text-primary">ThinkPad</a></li>
+											<li><a href="#" className="text-primary">Asus</a></li>
+											<li><a href="#" className="text-primary">Infinix</a></li>
+											<li><a href="#" className="text-primary">Iphone</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div><!--/category-products-->
+
+						<div className="brands_products"><!--brands_products-->
+							<h2 className="text-primary" >Brands</h2>
+							<div className="brands-name border-primary">
+								<ul className="nav nav-pills nav-stacked">
+									<li><a href="#" className="text-primary"> <span className="pull-right ">(50)</span>Sumsung</a></li>
+									<li><a href="#" className="text-primary"> <span className="pull-right">(56)</span> ThinkPad</a></li>
+									<li><a href="#" className="text-primary"> <span className="pull-right">(27)</span>Nokia</a></li>
+									<li><a href="#" className="text-primary"> <span className="pull-right">(32)</span>Infinix</a></li>
+
+								</ul>
+							</div>
+						</div>
+
+						<!--price-range-->
+						<!-- <div className="price-range">
+							<h2>Price Range</h2>
+							<form>
+							<div className="well text-center">
+								 <input type="text" className="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+								 <b className="pull-left">$ 0</b> <b className="pull-right">$ 600</b>
+							</div>
+							</form>
+						</div> -->
+
+
+						<div className="shipping text-center border-primary" style={{ border:"1px solid", }}>
+							<img src="/static/product/images/cover1.jpg" alt=""  />
+						</div>
+
+					</div>
+				</div>
+
+				<div className="col-sm-9 padding-right">
+					<div className="features_items"><!--features_items-->
+						<h2 className="title text-center text-primary">Features Products</h2>
+
+                         <div className="row">
+
+                             {% if feature_product %}
+                             {% for featured in feature_product %}
+
+
+						<div className="col-sm-4">
+							<div className="product-image-wrapper border-primary">
+								<div className="single-products">
+										<div className="productinfo text-center">
+											<img src="{{featured.image.url}}" alt="" />
+											<h2 className="text-primary">Ghc{{featured.price}}</h2>
+											<p className="text-primary">{{featured.name}}</p>
+											<a href="#" className="btn btn-default add-to-cart border-primary text-primary"><i className="fa fa-shopping-cart"></i>Add to cart</a>
+										</div>
+										<div className="product-overlay bg-primary">
+											<div className="overlay-content productinfo" >
+											<img src="{{featured.image.url}}" alt="" />
+											<h2 className="text-light">Ghc{{featured.price}}</h2>
+											<p className="text-light">{{featured.name}}</p>
+											<a href="#" className="btn btn-default add-to-cart border-primary text-primary"><i className="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+										</div>
+								</div>
+								<div className="choose">
+									<ul className="nav nav-pills ">
+										<li><a href="#" className="text-primary"><i className="fa fa-plus-square text-primary"></i>Add to wishlist</a></li>
+
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+
+
+                         {% endfor %}
+                         {% endif %}
+
+
+
+                    </div>
+					</div>
+
+
+
+
+
+
+					<div className="recommended_items">
+						<h2 className="title text-center text-primary">Recommended Products</h2>
+
+						<div id="product-carousel2" className="carousel slide multi-item-carousel " data-ride="carousel">
+							<div className="carousel-inner">
+							    	<div className="carousel-item active">
+                                    <div className="row">
+
+                                     {% if recomended_product %}
+                                     {% for featured in recomended_product %}
+
+									<div className="col-sm-4">
+										<div className="product-image-wrapper border-primary">
+											<div className="single-products">
+												<div className="productinfo text-center">
+													<img src="{{featured.image.url}}" alt="" />
+													<h2 className="text-primary">Ghc{{featured.price}}</h2>
+													<p className="text-primary">{{featured.name}}</p>
+													<a href="#" className="btn btn-default add-to-cart border-primary text-primary" ><i className="fa fa-shopping-cart"></i>Add to cart</a>
+												</div>
+
+											</div>
+												<div className="choose">
+									           <ul className="nav nav-pills ">
+										       <li><a href="#" className="text-primary"><i className="fa fa-plus-square text-primary"></i>Add to wishlist</a></li>
+										       </ul>
+								</div>
+										</div>
+									</div>
+
+								     {% endfor %}
+                                     {% endif %}
+
+
+
+
+
+							     </div>
+							     </div>
+
+                                <div className="carousel-item ">
+                                <div className="row">
+
+                                    {% if recomended_product %}
+                                     {% for featured in recomended_product %}
+									<div className="col-sm-4">
+										<div className="product-image-wrapper border-primary">
+											<div className="single-products">
+												<div className="productinfo text-center">
+													<img src="{{featured.image.url}}" alt="" />
+													<h2 className="text-primary">Ghc{{featured.price}}</h2>
+													<p className="text-primary">{{featured.name}}</p>
+													<a href="#" className="btn btn-default add-to-cart border-primary text-primary" ><i className="fa fa-shopping-cart"></i>Add to cart</a>
+												</div>
+
+											</div>
+											<div className="choose">
+									        <ul className="nav nav-pills ">
+										    <li><a href="#" className="text-primary"><i className="fa fa-plus-square text-primary"></i>Add to wishlist</a></li>
+										    </ul>
+							            	</div>
+										</div>
+									</div>
+
+									 {% endfor %}
+                                     {% endif %}
+
+
+
+
+							        </div>
+							     </div>
+
+                           </div>
+							 <a className="left recommended-item-control bg-primary" href="#product-carousel2" data-slide="prev">
+								<i className="fa fa-angle-left bg-primary"></i>
+							</a>
+							<a className="right recommended-item-control " href="#product-carousel2" data-slide="next">
+								<i className="fa fa-angle-right bg-primary"></i>
+							</a>
+					</div>
+					</div>
+
+
+
+</section>
+
+<section className="container-fluid" style={{ overflowX:"hidden", }}  >
+
+	 <!-- Vendor Start -->
+
+    <div className="container pt-5 pb-3  " >
+    <div className= "row">
+                <div id="product-carousel" className="carousel slide multi-item-carousel " data-ride="carousel">
+                	  <h2 className="section-title position-relative text-uppercase "><span className="bg-primary text-light pr-1">NEW</span></h2>
+                    <div className="carousel-inner bg-light border-primary" style={{ border:"1px solid", borderRadius:"4rem", }}>
+                     </div>
+
+
+                <div className="carousel-item active p-3 ">
+                 <div className="row px-xl-5 pb-3  mt-2 " >
+
+                         {"% if new_product %"}
+                         {"% for new in new_product %"}
+
+             <div className="col-lg-3 col-md-4 col-sm-6 pb-1 border-primary " style={{ border:"1px solid", borderRadius:"4rem", marginRight:"5px", }}>
+                         <a className="text-decoration-none" href="/BuyMe/">
+                        <div className="cat-item d-flex align-items-center mb-4"  style={{ padding:20px}}>
+                        <div className="overflow-hidden" style={{ width:"100%", height:"100%", }}>
+                        <img className="img-fluid" src="{{new.image.url}}" >
+                        </div>
+                        <div className="row" style={{ margin-left:23px}}>
+                        <p className="text-primary  fs-5" style={{ width:23px}}>{{new.name}}</p>
+                        <small className=" text-primary  fs-5">{{new.units_in_stock}}  Products</small>
+                        <br>
+                        <small className="text-left text-primary  fs-5" style={{ color: brown}}>Ghc{{new.price}}</small>
+
+                        <a href="#" className="btn btn-default add-to-cart border-primary text-primary  fs-5" ><i className="fa fa-shopping-cart"></i>Add to cart</a>
+
+                        </div>
+
+                    </div>
+
+
+                     <div className="choose" >
+									        <ul className="nav nav-pills ">
+										    <li><a href="#" className="text-primary"><i className="fa fa-plus-square text-primary"></i>Add to wishlist</a></li>
+										    </ul>
+							            	</div>
+                </a>
+
+
+            </div>
+
+                {% endfor %}
+                {% endif %}
+
+
+
+
+
+           </div>
+
+
+                </div>
+
+
+
+
+        <div className="carousel-item   p-3 ">
+        <div className="row px-xl-5 pb-3  mt-2 " >
+
+                        {"% if new_product %"}
+                        {"% for new in new_product %"}
+
+             <div className="col-lg-3 col-md-4 col-sm-6 pb-1 border-primary" style={{ border:"1px solid", borderRadius:"4rem", marginRight:"5px",  }}>
+                         <a className="text-decoration-none" href="/BuyMe/">
+                        <div className="cat-item d-flex align-items-center mb-4"  style={{ padding:20px}}>
+                        <div className="overflow-hidden" style={{ width:"100%", height:"100%", }}>
+                        <img className="img-fluid" src="{{new.image.url}}" >
+                        </div>
+                        <div className="row" style={{ margin-left:23px}}>
+                        <p className="text-primary  fs-5 " style={{ width:23px}}>{{new.name}}</p>
+                        <small className=" text-primary  fs-5">{{new.units_in_stock}}  Products</small>
+                        <br>
+                        <small className="text-left text-primary  fs-5" style={{ color: brown}}>Ghc{{new.price}}</small>
+                         <a href="#" className="btn btn-default add-to-cart border-primary text-primary  fs-5" ><i className="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+
+                    </div>
+                    <div className="choose" >
+									        <ul className="nav nav-pills ">
+										    <li><a href="#" className="text-primary"><i className="fa fa-plus-square text-primary"></i>Add to wishlist</a></li>
+										    </ul>
+							            	</div>
+                </a>
+
+
+            </div>
+
+
+                {% endfor %}
+                {% endif %}
+
+
+
+
+
+
+           </div>
+            </div>
+
+                    <a className="left recommended-item-control bg-primary" href="#product-carousel" data-slide="prev">
+					<i className="fa fa-angle-left bg-primary"></i>
+					</a>
+					<a className="right recommended-item-control " href="#product-carousel" data-slide="next">
+					 <i className="fa fa-angle-right bg-primary"></i>
+					</a>
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+	{% endblock %}
